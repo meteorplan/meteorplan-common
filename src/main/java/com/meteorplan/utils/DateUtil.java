@@ -33,10 +33,8 @@ public class DateUtil {
 
         if(minDate.length()==7 && maxDate.length()==7){
             sdf = new SimpleDateFormat("yyyy-MM");
-        }else if(minDate.length()==10 && maxDate.length()==10){
-            sdf = new SimpleDateFormat("yyyy-MM-dd");
         }else {
-            sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            sdf = new SimpleDateFormat("yyyy-MM-dd");
         }
 
         Calendar min = Calendar.getInstance();
